@@ -9,9 +9,9 @@ Este projeto foi desenvolvido como parte do módulo 03 do curso de Code Artisan,
 ## Funcionalidades
 
 1. **Listagem de Produtos:** exibe uma lista de produtos obtidos da Fake Store API.
-2. **Detalhes do Produto:** permite visualizar informações detalhadas de um produto selecionado.
-3. **Carrinho de Compras:** possibilita adicionar produtos ao carrinho de compras e calcular o total da compra.
-4. **Filtro de Produtos:** permite filtrar os produtos por categoria.
+2. **Adicioanar um Produto:** permite adicionar um produto na lista.
+3. **Remover um Produto:** permite remover um produto da lista.
+2. **Editar um Produto:** permite editar um produto na lista.
 
 ## Tecnologias Utilizadas
 
