@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Artisan Store</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Lista de produtos</h1>
+      </header>
+      <!-- Modal de adicionar -->
+      <form id="form-add-product">
+        <h1 style="text-align: center">Adicionar o produto</h1>
+        <input type="text" id="name" placeholder="Nome do produto" required />
+        <input
+          type="number"
+          id="price"
+          placeholder="Preço do produto"
+          required
+        />
+        <input
+          type="text"
+          id="description"
+          placeholder="Descrição do produto"
+          required
+        />
+        <input type="url" id="image" placeholder="Imagem do produto" required />
+        <input
+          type="text"
+          id="category"
+          placeholder="Categoria do produto"
+          required
+        />
+        <button type="submit">Adicionar produto</button>
+      </form>
+      <section id="product-list" class="product-list"></section>
+
+      <!-- Modal de editar -->
+      <form id="form-edit-product" style="display: none">
+        <h1 style="text-align: center">Editar o produto</h1>
+        <input type="hidden" id="edit-id" />
+        <input
+          type="text"
+          id="edit-name"
+          placeholder="Nome do produto"
+          required
+        />
+        <input
+          type="number"
+          id="edit-price"
+          placeholder="Product Price"
+          step="0.01"
+          required
+        />
+        <input
+          type="text"
+          id="edit-description"
+          placeholder="Descrição do produto"
+          required
+        />
+        <input
+          type="url"
+          id="edit-image"
+          placeholder="Imagem do produto"
+          required
+        />
+        <input
+          type="text"
+          id="edit-category"
+          placeholder="Categoria do produto"
+          required
+        />
+        <button type="submit">Editar Produto</button>
+      </form>
+
+      <!-- Modal para exibir o produto editado -->
+      <div id="edit-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <h2>Edited Product</h2>
+          <div id="modal-product-details">
+            <img id="modal-image" src="" alt="Product Image" />
+            <h3 id="modal-title"></h3>
+            <h3 id="modal-category"></h3>
+            <p id="modal-description"></p>
+            <p id="modal-price"></p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
